@@ -1,0 +1,18 @@
+<div class="container mt-3">
+  <div class="row">
+    <div><button (click)="addCourse()">Add</button></div>
+    <div><button (click)="loadCourse()">Load</button></div>
+    <ul>
+      <li *ngFor="let course of courses; trackBy: trackCourse">
+        <!--<a [class.bg-info]="bg"  (click)="onBgColor()">{{course.Name}}</a>
+        <span>
+          <button (click)="removeCourse(course)" >Remove</button>
+        </span>
+        <span>
+          <button (click)="updateCourse(course)" >Update</button>
+        </span>-->
+        {{course.Name}}
+      </li>
+    </ul>
+  </div>
+</div>

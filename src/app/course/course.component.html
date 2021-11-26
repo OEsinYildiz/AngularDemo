@@ -1,0 +1,39 @@
+<!--<h2>{{getTitle()}}</h2>
+<div>
+  <ul>
+    <li *ngFor="let course of courses">{{course}}</li>
+  </ul>
+</div>-->
+
+<div class="container">
+  <!--<div class="row">
+    <div class="col-lg-4">
+      <button [style.backgroundColor]="isActive ? 'red' : 'green'" class="btn btn-primary" [class.active]="isActive">
+        Save
+      </button>
+      &lt;!&ndash;    Event Binding&ndash;&gt;
+      <div (click)="onDivClick()">
+        <button (click)="onSave($event)" class="btn btn-info">Button</button>
+      </div>
+      <div class="col-lg-4">
+        <input type="text" (keyup.enter)="onKeyUp()" >
+      </div>
+
+      <div class="col-lg-4">
+        <input type="email" [(ngModel)]="email"  (keyup.enter)="onKeyUpEmail()" >
+      </div>
+    </div>
+  </div>-->
+  <div class="row">
+    <div class="col-lg-6">
+      <p>{{course.title | uppercase}}</p>
+      <p>{{course.student | number}}</p>
+      <p>{{course.rating | number:'1.2-2'}}</p>
+      <p>{{course.rating | number:'1.1-1'}}</p> <!-- Yuvarmala yapar-->
+      <p>{{course.price | currency:'TR':true:'3.2-2'}}</p>
+      <p>{{course.releaseDate | date:'shortDate'}}</p>
+      <p>{{course.releaseDate | date:'mediumDate'}}</p>
+      <p>{{lorem | summary:10}}</p>
+    </div>
+  </div>
+</div>
